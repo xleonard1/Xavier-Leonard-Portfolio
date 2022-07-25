@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#intro-example {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/tech.jpg') ;
+    background-position: center;
+    position: relative;
+ 
+  }
+
+  .jumbo-title {
+    margin-top: 100px;
+  }
+
+  .about-container {
+    
+    align-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .about-ul {
+    list-style: none;
+    text-align: left;
+}
+.about-li:before{
+    content: ">";
+    padding-right: 8px;
+    font-style: italic;
+}
+.about {
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+
+
+.section-title h1{
+    font-weight: 700;
+}
+.card-title {
+    font-weight: 700
+}
+.section-skills-title {
+    text-align: center;
+}
+
+.skills {
+    padding: 0 10px;
+    overflow: hidden;
+
+}
+.skills-content {
+    line-height: 1.5rem;
+}
+.progress {
+    width: 100%;
+}
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0px;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+  }
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: grey;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #0563bb;
+  }
+  
+  
+
+  .portfolio {
+    margin-top: 100px;
+    justify-content: center;
+    overflow: hidden;
+}
+  .portfolio .section-title {
+      margin-bottom: 60px;
+      text-align: center;
+  }
+  .personal-nav {
+   list-style: none;
+   
+}
+ .wrapper{margin:10vh}
+ .project-card{
+    border: none;
+    overflow:hidden;
+    border-radius:0px;
+    min-height:450px;
+  
+  }
+  
+   .card-has-bg{
+    background-size:120%;
+    background-repeat:no-repeat;
+    background-position: center center;
+   }
+  
+   .card-img-overlay {
+   background: rgb(35,79,109);
+  background: linear-gradient(0deg, rgba(35,79,109,0.3785889355742297) 0%, rgba(69,95,113,1) 100%);
+  }
+
+   
+  
+
+
+  
+  
+  
+  
+
+  /* Height for devices larger than 992px */
+
+  
+ 
+
+
+
+@media (min-width:900px) {
+@media (min-width: 600px) {
+    #intro-example {
+        height: 900px;
+      }
+    }
+    .img-fluid {
+        min-width: 400px;
+        height: 450px;
+        padding: 12px
+    }
+    .text-white{
+        margin-top: 12%;
+    }
+    
+    .about {
+        overflow: hidden;
+        
+    }
+
+    .jumbo-title {
+      margin-top: 200px;
+    }
+
+    .card-body {
+        margin-left: 60px;
+    }
+    .about-container {
+       padding: 60px;
+       align-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    .about-details {
+        line-height: 3.0em;
+        justify-content: space-between;
+    }
+    .about-ul {
+        list-style: none;
+    }
+    .about-li:before{
+        content: ">";
+        padding-right: 8px;
+        font-style: italic;
+    }
+    .aboutme-card {
+        text-align: left;
+        border-style: none;
+        
+    }
+    
+    
+    
+    
+    .portfolio {
+        margin-top: 100px;
+        justify-content: center;
+        overflow: hidden;
+        margin-left: 30px;
+    }
+    .portfolio .section-title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .img-fluid {
+        max-width: 200px;
+        max-height: 2000px;
+    }
+    
+    
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }  
+
+    
+    
+    .modal {
+      display: none;
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      .close {
+        
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .personal-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .wrapper{margin:10vh}
+
+
+    .project-card{
+      border: none;
+      overflow:hidden;
+      border-radius:0px;
+      min-height:450px;
+    }
+
+    .card-has-bg{
+      background-size:120%;
+      background-repeat:no-repeat;
+      background-position: center center;
+    }
+
+    .card-img-overlay {
+     transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+     background: rgb(35,79,109);
+     background: linear-gradient(0deg, rgba(35,79,109,0.3785889355742297) 0%, rgba(69,95,113,1) 100%);
+    }   
+}
+
+
+  
+
+   
+ 
+
+  
+
+
+
